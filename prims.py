@@ -85,20 +85,6 @@ def prims_algorithm(graph):
 
     return result
 
-def djikstras_algorithm(graph):
-    heap = MinHeapNode()
-
-    vertex_distance_map = {}
-    vertex_path_map = {}
-
-    for vertex in graph.get_vertices():
-        heap.insert(HeapNode(vertex,sys.maxsize))
-
-    heap.decrease_key('A',0)
-    vertex_distance_map['A']=0
-    vertex_path_map['A']=None
-
-
 if __name__=='__main__':
 
     # TestCase
