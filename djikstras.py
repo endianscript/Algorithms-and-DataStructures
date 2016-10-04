@@ -70,6 +70,7 @@ def dijkstras_algorithm(graph):
 
     for vertex in graph.get_vertices():
         heap.insert(HeapNode(vertex,sys.maxsize))
+        vertex_distance_map[vertex] = sys.maxsize
 
     heap.decrease_key('A',0)
     vertex_distance_map['A'] = 0
